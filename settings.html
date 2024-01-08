@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="images/ico.ico" type="image/x-icon">
         <link rel="stylesheet" href="storage/css/settings-v2.css">
-        <title>Settings | Seraph</title>
+        <title>Settings - HimeSpider</title>
 
         <meta name="description" content="seraph; an open source unblocked games website hosting 100+ games with downloadable support, a clean and centralised user interface and no iframe embedding">
         <meta property="og:site_name" content="seraph">
@@ -23,33 +23,33 @@
     <div class="cursor"></div>
     <div class="content-side">
         <h1>settings</h1>
-        <a href="index.html" style="font-size: 18px;">go to homepage</a>
+        <a href="index.html" style="font-size: 18px;">Go to Homepage</a>
         
         <br>
         <h2 style="margin: 0;">cloak</h2>
-        <p> mask seraph with a tab cloak! </p>
+        <p> Mask HimeSpider With a Tab Cloak! </p>
         <br>
         <select id="presetSelect">
-            <option value="google">google</option>
-            <option value="googleclassroom">google classroom</option>
-            <option value="googledrive">google drive</option>
-            <option value="chrometab">chrome new tab</option>
-            <option value="gmail">gmail</option>
+            <option value="google">Google</option>
+            <option value="googleclassroom">Google Classroom</option>
+            <option value="googledrive">Coogle Drive</option>
+            <option value="chrometab">Chrome New Tab</option>
+            <option value="gmail">Gmail</option>
 
-            <option value="bing">bing</option>
-            <option value="desmos">desmos calculator</option>
-            <option value="wikipedia">wikipedia</option>
+            <option value="bing">Bing</option>
+            <option value="desmos">Desmos Calculator</option>
+            <option value="wikipedia">Wikipedia</option>
 
 
         </select>
 
-        <button id="saveButton">select preset cloak</button>
-        <button id="resetButton">reset cloak</button>
-        <p id="success" style="display: none;">success message here</p>
+        <button id="saveButton">Select Preset Cloak</button>
+        <button id="resetButton">Reset Cloak</button>
+        <p id="success" style="display: none;">Success Message Here</p>
 
         <br>
         <h2 style="margin: 0;">themes</h2>
-        <p> change the theme of the website here! </p>
+        <p> Change the Theme of the Website Here! </p>
         <br>
         <select id="theme-select">
             <option value="seraph">seraph</option>
@@ -67,7 +67,7 @@
             function applyTheme() {
                 const selectedTheme = document.getElementById('theme-select');
                 if (selectedTheme) {
-                    const themeValue = selectedTheme.value;
+                    const themeValue = retro.value;
                     document.documentElement.className = `theme-${themeValue}`;
                     localStorage.setItem('selectedTheme', themeValue);
                 }
